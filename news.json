@@ -1,0 +1,68 @@
+[
+    {
+        "id": "bbc-news",
+        "name": "BBC News",
+        "author": "Jane Smith",
+        "title": "Another Important Event",
+        "description": "Details about another important event happening around the world.",
+        "url": "https://www.bbc.com/news/world/2024/important-event",
+        "urlToImage": "https://cdn.bbc.com/news/images/important-event.jpg",
+        "publishedAt": "2024-09-08T10:20:00Z",
+        "content": "This is the full article content for the important event happening globally."
+    },
+    {
+        "id": "cnn-news",
+        "name": "CNN News",
+        "author": "John Doe",
+        "title": "Global Market Updates",
+        "description": "Insightful details on the current global market trends.",
+        "url": "https://www.cnn.com/news/markets/2024/global-market",
+        "urlToImage": "https://cdn.cnn.com/news/images/market.jpg",
+        "publishedAt": "2024-09-08T14:35:00Z",
+        "content": "Detailed analysis of the global market trends affecting economies worldwide."
+    },
+    {
+        "id": "aljazeera-news",
+        "name": "Al Jazeera News",
+        "author": "Alice Johnson",
+        "title": "Middle East Conflicts",
+        "description": "An in-depth look into the ongoing conflicts in the Middle East.",
+        "url": "https://www.aljazeera.com/news/middle-east/2024/conflicts",
+        "urlToImage": "https://cdn.aljazeera.com/news/images/conflicts.jpg",
+        "publishedAt": "2024-09-08T09:15:00Z",
+        "content": "A comprehensive report on the conflicts in the Middle East and their global impact."
+    },
+    {
+        "id": "nytimes-news",
+        "name": "New York Times",
+        "author": "Mark Brown",
+        "title": "US Elections 2024",
+        "description": "The latest updates on the US Elections 2024.",
+        "url": "https://www.nytimes.com/news/elections/2024/updates",
+        "urlToImage": "https://cdn.nytimes.com/news/images/elections.jpg",
+        "publishedAt": "2024-09-08T12:45:00Z",
+        "content": "Breaking news and detailed reports on the US Elections 2024."
+    },
+    {
+        "id": "fox-news",
+        "name": "Fox News",
+        "author": "Laura White",
+        "title": "Tech Innovations in 2024",
+        "description": "An overview of the top technological innovations of 2024.",
+        "url": "https://www.foxnews.com/news/tech/2024/innovations",
+        "urlToImage": "https://cdn.foxnews.com/news/images/tech.jpg",
+        "publishedAt": "2024-09-08T16:00:00Z",
+        "content": "Exploring the cutting-edge technologies that are shaping the future in 2024."
+    },
+    {
+        "id": "guardian-news",
+        "name": "The Guardian",
+        "author": "Emma Green",
+        "title": "Climate Change Updates",
+        "description": "Important updates on global climate change efforts.",
+        "url": "https://www.theguardian.com/news/climate-change/2024/updates",
+        "urlToImage": "https://cdn.theguardian.com/news/images/climate-change.jpg",
+        "publishedAt": "2024-09-08T18:30:00Z",
+        "content": "The latest news on global efforts to combat climate change."
+    }
+]
