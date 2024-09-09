@@ -107,3 +107,25 @@ footer {
 footer .text-center {
     font-size: 0.9rem;
 }
+/* Ensure the hero section covers the full viewport height */
+.hero {
+    background: url('https://images.pexels.com/photos/1770806/pexels-photo-1770806.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero .btn {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+}
+
