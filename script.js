@@ -7,7 +7,7 @@ let newsContainer = document.querySelector('#news-container');
 let paginationContainer = document.querySelector('#pagination-container');
 let searchInput = document.querySelector('#search');
 let sortingSelect = document.querySelector('#sorting');
-
+// function to fetch data using the API
 fetchNewsBtn.addEventListener('click', async () => {
     await fetch(`https://newsapi.org/v2/everything?q=keyword&apiKey=9fd24d14ddd54ddcadda53c41d9f2d55`)
         .then((response) => response.json())
@@ -15,7 +15,7 @@ fetchNewsBtn.addEventListener('click', async () => {
         .catch((error) => console.error(error));
     displayNews();
 });
-
+// function to display the fetched data
 function displayNews() {
     newsContainer.innerHTML = "";
     let filteredNews = newsList.filter(news => news.title.toLowerCase().includes(searchInput.value.toLowerCase()));
@@ -59,11 +59,11 @@ searchInput.addEventListener('input', () => {
     currentPage = 1;
     displayNews();
 });
-
+// when either latest or oldest is selected then 
 sortingSelect.addEventListener('change', () => {
     displayNews();
 });
-
+// pagination concept
 function displayPagination(totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     paginationContainer.innerHTML = "";
