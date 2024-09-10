@@ -1,5 +1,11 @@
+html {
+    min-height:100%; 
+    position: relative;
+}
 body {
-    background-color: #f8f9fa;
+    background-color: #f5f8fa;
+    margin-bottom: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .navbar {
@@ -18,6 +24,11 @@ body {
 #fetch-news:hover {
     background-color: #0056b3;
 }
+#news-list{
+    display: grid;
+    gap: 20px;
+    
+}
 
 #news-list article {
     background: #fff;
@@ -25,6 +36,11 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     padding: 15px;
+}
+#news-list article:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #news-list img {
@@ -38,14 +54,74 @@ body {
 
 footer {
     background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
+    color: #ffffff;
+    padding: 2rem 0; /* Increased padding for better spacing */
     width: 100%;
-    margin-top: auto; /* Pushes footer to the bottom of the page */
+    height: -60px;
+    bottom: 0;
+    position: absolute; /* Ensures it stays at the bottom */
 }
 
 footer .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Enhances visibility */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+hr.bg-light {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 1rem 0; /* Added spacing around the line */
+}
+
+footer .text-center {
+    font-size: 0.9rem;
+}
+.heroes {
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_640.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative; /* To ensure the absolute positioning works within this container */
+}
+
+.hero-content {
+    position: absolute; /* Position it absolutely to cover the entire heroes area */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    display: flex; /* Flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column;align-items: center; /* Center vertically */
+    padding: 20px;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; /* Ensure text is visible */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: white; /* Ensure text is visible */
 }
