@@ -1,13 +1,14 @@
-let newsList = [];
-let currentPage = 1;
-let itemsPerPage = 6;
-
+let newsList = [];  //array to store the news articles fetched from the API
+let currentPage = 1; //when pageload
+let itemsPerPage = 6;  //array to store the news articles fetched from the API
+ 
+// selecting the containers by specified ID
 const fetchNewsBtn = document.querySelector('#fetchNews');
 let newsContainer = document.querySelector('#news-container');
 let paginationContainer = document.querySelector('#pagination-container');
 let searchInput = document.querySelector('#search');
 let sortingSelect = document.querySelector('#sorting');
-// function to fetch data using the API
+// to fetch data using the API
 fetchNewsBtn.addEventListener('click', async () => {
     await fetch(`https://newsapi.org/v2/everything?q=keyword&apiKey=9fd24d14ddd54ddcadda53c41d9f2d55`)
         .then((response) => response.json())
@@ -18,14 +19,15 @@ fetchNewsBtn.addEventListener('click', async () => {
 // function to display the fetched data
 function displayNews() {
     newsContainer.innerHTML = "";
+    //filters the output based on search
     let filteredNews = newsList.filter(news => news.title.toLowerCase().includes(searchInput.value.toLowerCase()));
-
+    //sorting
     if (sortingSelect.value === 'latest') {
         filteredNews.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
     } else {
         filteredNews.sort((a, b) => new Date(a.publishedAt) - new Date(b.publishedAt));
     }
-
+    //paginate
     let paginatedNews = filteredNews.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     for (let i = 0; i < paginatedNews.length; i++) {
@@ -63,7 +65,7 @@ searchInput.addEventListener('input', () => {
 sortingSelect.addEventListener('change', () => {
     displayNews();
 });
-// pagination concept
+// pagination concept displaying
 function displayPagination(totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     paginationContainer.innerHTML = "";

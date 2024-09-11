@@ -10,7 +10,7 @@ body {
 
 }
 
-/* Navbar  */
+ /* Navbar   */
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -48,18 +48,20 @@ input[type="text"]:focus, select:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* News Container Styles */
+/* News Container */
 #news-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+   
+    justify-content:space-between;
+  
 }
 
 #news-container .col-md-4 {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -81,14 +83,14 @@ input[type="text"]:focus, select:focus {
     color: #6c757d;
 }
 
-/* Pagination Styles */
+/* Pagination  */
 #pagination-container {
     display: flex;
     justify-content: center;
 }
 
 #pagination-container button {
-    background-color: #007bff;
+    background-color: #535d5d;
     color: #ffffff;
     border: none;
     border-radius: 0.3rem;
@@ -102,7 +104,7 @@ input[type="text"]:focus, select:focus {
     background-color: #0056b3;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #343a40;
     color: #ffffff;
@@ -145,7 +147,7 @@ footer .text-center {
     font-size: 0.9rem;
 }
 
-/* Ensure the hero section covers the full viewport height */
+/*  hero section covers the full viewport height */
 .hero {
     background: url('https://images.pexels.com/photos/1770806/pexels-photo-1770806.jpeg') no-repeat center center;
     background-size: cover;
